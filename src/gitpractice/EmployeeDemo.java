@@ -10,8 +10,8 @@ public class EmployeeDemo {
         try{
             //1. Get a connection to database
             Connection myConn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/Testgitdb",
-                    "root","roji74"
+                    "jdbc:mysql://localhost:3306/Testgitdb", //change the database name
+                    "root","password" // change the password
             );
             System.out.println("Connected to database");
 
