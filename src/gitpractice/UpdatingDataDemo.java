@@ -5,7 +5,7 @@ import java.sql.*;
 public class UpdatingDataDemo {
 
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/demo";
+        String url = "jdbc:mysql://localhost:3306/Testgitdb";
         String user = "root";
         String pass = "abc123";
 
@@ -17,9 +17,9 @@ public class UpdatingDataDemo {
             Statement myStmt = myConn.createStatement();
 
             //3. Execute the SQL Query
-            String sql = "update employees"
-                    + " set age=30"
-                    + " where id=1";
+            String sql = "update members"
+                    + " set email= 'aarti@gmail.com'"
+                    + " where id=2";
 
             myStmt.executeUpdate(sql);
             System.out.println("Update complete");
