@@ -17,7 +17,7 @@ public class DeletingDataDemo {
             Statement myStmt = myConn.createStatement();
 
             //3. Execute the SQL Query
-            String sql = "delete from employees where id=2";
+            String sql = "delete from members where id=3"; // change the id which you want to delete
 
             int rowsAffected = myStmt.executeUpdate(sql);
 

@@ -18,8 +18,8 @@ public class UpdatingDataDemo {
 
             //3. Execute the SQL Query
             String sql = "update members"
-                    + " set email= 'aarti@gmail.com'"
-                    + " where id=2";
+                    + " set email= 'aarti@gmail.com'" // set the new value
+                    + " where id=2"; // specify the id
 
             myStmt.executeUpdate(sql);
             System.out.println("Update complete");
